@@ -38,6 +38,7 @@ module.exports = defineConfig({
       //   }
       // } )
     },
+
     specPattern: "cypress/integration",
   },
 });
