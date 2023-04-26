@@ -1,7 +1,6 @@
-
 /// <reference types='cypress' />
 
-import 'cypress-iframe'
+import "cypress-iframe";
 
 // context('Actions', ()=> {
 
@@ -23,19 +22,19 @@ import 'cypress-iframe'
 //     })
 // });
 
-context('fframes', ()=> {
+context("fframes", () => {
+  before(() => {
+    cy.visit("https://jqueryui.com/draggable/");
+  });
 
-    before(()=>{
-        cy.visit('https://jqueryui.com/draggable/')
-    })
+  it("iframes practice", () => {
+    cy.frameLoaded(".demo-frame");
 
-    it('iframes practice', ()=>{
-        cy.frameLoaded('.demo-frame')
-
-        cy.iframe().find('#draggable').then(res=>{
-            const frmValue = res.text()
-            expect(frmValue).to.contain('Drag me around')
-
-        })
-    })
+    cy.iframe()
+      .find("#draggable")
+      .then((res) => {
+        const frmValue = res.text();
+        expect(frmValue).to.contain("Drag me around");
+      });
+  });
 });

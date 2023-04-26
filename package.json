@@ -12,6 +12,7 @@
     "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "cypress": "^12.10.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.4.0",
     "cypress-xpath": "^2.0.1",
     "mocha": "^10.2.0",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "node": "^19.8.1"
   }
 }

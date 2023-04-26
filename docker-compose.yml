@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  e2e:
+    image: cypress
+    build: .
+    container_name: cypress
+    command: npx cypress run
+
+    volumes:
+      # - ./e2e/cypress.config.js:/app/cypress.config.js  
+      - ./:/e2e
+      #  - /Users/ctagb/report/:/Users/ctagb/report/
