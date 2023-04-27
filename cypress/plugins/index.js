@@ -1,5 +1,3 @@
+require("cypress-xpath");
 
-require('cypress-xpath')
-
-import './commands'
-
+ import './commands'
